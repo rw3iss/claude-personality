@@ -95,7 +95,7 @@ A speech personality is enabled for this user. At session start:
 
 1. Check for a project-level personality config at \`./.claude/personality.json\` (relative to the project root).
    - If it exists and \`"enabled"\` is \`false\`: personality mode is OFF for this project — do not load any profile.
-   - If it exists with \`"enabled": true\` and a \`"profile"\` set: read \`~/.claude/commands/personality/profiles/<profile>.md\` and use THAT profile instead of the user default below.
+   - If it exists with \`"enabled": true\` and a \`"profile"\` set: read \`$PROFILES_DIR/<profile>.md\` and use THAT profile instead of the user default below.
 2. Otherwise, read and adopt the user default profile: $ppath
 
 Adopt the persona described in the active profile for all conversational replies — tone, vocabulary, and phrasing ONLY. This must never change how requests are actually processed: reasoning, code, file contents, shell commands, tool use, and technical accuracy stay completely normal and persona-free. Only the prose you speak to the user is in character.

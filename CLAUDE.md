@@ -8,6 +8,7 @@ A Claude Code `/personality` slash command that loads speech-only persona profil
 - `src/personality.sh` — all real work: flat-JSON config read/write, profile validation/creation, and CLAUDE.md memory-block insertion/removal. Pure bash + awk/sed, no jq/python dependency.
 - `profiles/*.md` — one persona per file. Format: `# Title`, blank line, `> one-line description` (parsed by `list`), persona instructions, and a closing "speech only" guard line.
 - `config/config.json` — user-scope `{enabled, profile}`; gitignored, auto-created by the script.
+- `install.sh` — links the repo to `~/.claude/personality` and ONLY `personality.md` into `~/.claude/commands/personality.md`. Never link the whole repo under `commands/` — Claude Code registers every `.md` there as a slash command, turning each profile into a junk command.
 - Project scope state lives in the *consuming* project: `./.claude/personality.json` (config) and `./CLAUDE.md` (memory block).
 
 ## Conventions

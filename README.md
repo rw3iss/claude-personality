@@ -10,7 +10,9 @@ cd claude-personality
 ./install.sh
 ```
 
-This symlinks the repo to `~/.claude/commands/personality`, which registers the `/personality` command. Restart Claude Code sessions to pick it up.
+This creates two symlinks: `~/.claude/personality` → the repo (profiles, config, scripts), and `~/.claude/commands/personality.md` → the command file, registering `/personality`. Restart Claude Code sessions to pick it up.
+
+> Only the command file is linked under `~/.claude/commands/` — Claude Code registers *every* `.md` in that tree as a slash command, so linking the whole repo there would turn each profile into a junk command.
 
 ## Usage
 
@@ -69,7 +71,7 @@ Errors if the name is taken. You can also drop a `.md` file into `profiles/` by 
 
 **State** lives in two flat JSON configs (`{ "enabled": bool, "profile": "name" }`):
 
-- **User**: `~/.claude/commands/personality/config/config.json` (auto-created, gitignored)
+- **User**: `~/.claude/personality/config/config.json` (auto-created, gitignored)
 - **Project**: `./.claude/personality.json` in the project where you ran the command
 
 **Memory**: enabling with a profile set appends a marked block to the relevant `CLAUDE.md` (user: `~/.claude/CLAUDE.md`, project: `./CLAUDE.md`), instructing Claude to read the profile file and adopt the persona for conversational replies only. The block sits between `<!-- personality-mode:start -->` / `<!-- personality-mode:end -->` markers so disabling can remove it cleanly. Files are created if missing.
@@ -103,7 +105,7 @@ personality/
 │   └── personality.sh  # manager script: config, profiles, memory blocks
 ├── profiles/           # one .md per persona — add your own here
 ├── config/             # user config.json lives here (auto-created)
-├── install.sh          # symlinks repo → ~/.claude/commands/personality
+├── install.sh          # links repo → ~/.claude/personality + command → ~/.claude/commands/personality.md
 └── README.md
 ```
 

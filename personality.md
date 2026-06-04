@@ -10,7 +10,7 @@ Manage personality mode. All state changes are performed by the manager script; 
 
 ## Result
 
-!`bash "$HOME/.claude/commands/personality/src/personality.sh" $ARGUMENTS`
+!`bash "$HOME/.claude/personality/src/personality.sh" $ARGUMENTS`
 
 ## Instructions
 
