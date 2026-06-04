@@ -4,15 +4,28 @@ A `/personality` command for Claude Code that makes Claude **speak** as a config
 
 ## Install
 
+One-liner (no clone needed — also updates an existing install):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/rw3iss/claude-personality/main/install.sh | bash
+```
+
+This clones the repo to `~/.claude/personality` (or `git pull`s it if already there) and links `~/.claude/commands/personality.md` → the command file, registering `/personality`. Restart Claude Code sessions to pick it up.
+
+<details>
+<summary><b>Dev install (work on the repo itself)</b></summary>
+
 ```bash
 git clone git@github.com:rw3iss/claude-personality.git
 cd claude-personality
 ./install.sh
 ```
 
-This creates two symlinks: `~/.claude/personality` → the repo (profiles, config, scripts), and `~/.claude/commands/personality.md` → the command file, registering `/personality`. Restart Claude Code sessions to pick it up.
+Run from a checkout, `install.sh` symlinks the clone to `~/.claude/personality` instead of cloning, so edits are live. Env overrides: `PERSONALITY_REPO` (clone URL), `PERSONALITY_DIR` (install dir).
 
 > Only the command file is linked under `~/.claude/commands/` — Claude Code registers *every* `.md` in that tree as a slash command, so linking the whole repo there would turn each profile into a junk command.
+
+</details>
 
 ## Usage
 
