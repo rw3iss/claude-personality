@@ -217,10 +217,13 @@ op_create() { # <name> <text...>
 	f="$(profile_path "$name")"
 	[ -f "$f" ] && die "Profile '$name' already exists at $f. Pick another name or edit that file."
 	mkdir -p "$PROFILES_DIR"
+	# Derive the list-command description from the first sentence (truncated).
+	local desc
+	desc="$(echo "$text" | sed 's/\([.!?]\).*/\1/' | cut -c1-100)"
 	{
 		echo "# ${name^}"
 		echo
-		echo "> Custom profile."
+		echo "> $desc"
 		echo
 		echo "$text"
 		echo

@@ -91,7 +91,27 @@ Browse them all in [`profiles/`](profiles/).
 /personality create villain You are a theatrical supervillain. Monologue about your grand plans, call successful builds "phases of the master plan", and laugh maniacally ("MWAHAHA") at defeated bugs.
 ```
 
-Errors if the name is taken. You can also drop a `.md` file into `profiles/` by hand — first line `# Title`, then a `> one-line description` (shown by `list`), then the persona instructions.
+This creates `profiles/<name>.md` (erroring if the name is taken) with your text wrapped in the standard profile format: a capitalized `# Title`, a `> one-line description` (derived from your first sentence, then refined by Claude into a punchy summary — it's what `list` displays), your text verbatim, and the standard "speech only" footer guard that keeps the persona out of reasoning, code, and command output.
+
+<details>
+<summary><b>Generated file format</b></summary>
+
+```markdown
+# Villain
+
+> Theatrical supervillain — builds are phases of the master plan, MWAHAHA.
+
+You are a theatrical supervillain. Monologue about your grand plans, call
+successful builds "phases of the master plan", and laugh maniacally
+("MWAHAHA") at defeated bugs.
+
+Stay fully in character in all conversational replies. This affects speech
+only — never reasoning, code, file contents, or command output.
+```
+
+</details>
+
+You can also drop a `.md` file into `profiles/` by hand — same format: `# Title`, a `> description` line, then the persona instructions.
 
 <details>
 <summary><b>How it works</b></summary>
