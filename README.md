@@ -8,6 +8,8 @@ A `/personality` command for Claude Code that makes Claude **speak** as a config
 
 ![english](.github/screenshots/english.png)
 
+![english-2](.github/screenshots/english-2.png)
+
 **Country:**
 
 ![country](.github/screenshots/country.png)
