@@ -2,11 +2,19 @@
 
 A `/personality` command for Claude Code that makes Claude **speak** as a configurable persona — pirate, preacher, rapper, Yoda — while leaving actual request processing completely untouched. Speech only; reasoning, code, file edits, and command output stay normal.
 
-![pirate](.github/screenshots/pirate.png)
+### Examples
+
+**English:**
+
+![english](.github/screenshots/english.png)
+
+**Country:**
 
 ![country](.github/screenshots/country.png)
 
-![english](.github/screenshots/english.png)
+**Pirate:**
+
+![pirate](.github/screenshots/pirate.png)
 
 ## Install
 
