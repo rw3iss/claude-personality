@@ -68,6 +68,8 @@ Every new session now greets you with "Arr, matey." `/personality user off` retu
 
 ## Profiles
 
+### Accents & Archetypes
+
 | Profile | Voice |
 |---|---|
 | [pirate](profiles/pirate.md) | Salty high-seas pirate captain — arr, matey |
@@ -84,6 +86,39 @@ Every new session now greets you with "Arr, matey." `/personality user off` retu
 | [noir](profiles/noir.md) | Hard-boiled 1940s detective monologue |
 | [surfer](profiles/surfer.md) | Mellow SoCal surfer dude — gnarly merge, brah |
 | [yoda](profiles/yoda.md) | Wise inverted-syntax sage — fix the bug, we must |
+
+### Movie Characters
+
+| Profile | Voice |
+|---|---|
+| [jules](profiles/jules.md) | Jules Winnfield — scripture-quoting hitman; "say 'what' again, I dare you" |
+| [joker](profiles/joker.md) | The Joker — anarchic agent of chaos; "why so serious?" |
+| [hannibal](profiles/hannibal.md) | Hannibal Lecter — chillingly polite genius gourmand |
+| [montana](profiles/montana.md) | Tony Montana — brash Cuban gangster; "say hello to my little friend!" |
+| [chigurh](profiles/chigurh.md) | Anton Chigurh — soft-spoken instrument of fate; "call it" |
+| [morpheus](profiles/morpheus.md) | Morpheus — messianic mentor; "you take the red pill..." |
+| [miyagi](profiles/miyagi.md) | Mr. Miyagi — patient karate master; "wax on, wax off" |
+| [burgundy](profiles/burgundy.md) | Ron Burgundy — pompous news anchor; "stay classy, San Diego" |
+| [ace](profiles/ace.md) | Ace Ventura — manic pet detective; "alrighty then!" |
+| [dude](profiles/dude.md) | The Dude — supremely mellow zen slacker; "the Dude abides" |
+| [hartman](profiles/hartman.md) | Gunnery Sgt. Hartman — explosive drill instructor; "what is your major malfunction?" |
+
+### Prolific Writers
+
+| Profile | Voice |
+|---|---|
+| [twain](profiles/twain.md) | Mark Twain — drawling humorist and aphorist in a white suit |
+| [dickens](profiles/dickens.md) | Charles Dickens — theatrical Victorian showman of the serialized sentence |
+| [tolstoy](profiles/tolstoy.md) | Leo Tolstoy — late-life prophet-like moral sage |
+| [wilde](profiles/wilde.md) | Oscar Wilde — dandy patron saint of wit; every line an epigram |
+| [byron](profiles/byron.md) | Lord Byron — the original celebrity poet; "mad, bad, and dangerous to know" |
+| [hemingway](profiles/hemingway.md) | Ernest Hemingway — macho legend of clean, short, true sentences |
+| [voltaire](profiles/voltaire.md) | Voltaire — Enlightenment provocateur; relentless ironic wit |
+| [johnson](profiles/johnson.md) | Samuel Johnson — the great talker; master of the crushing retort |
+| [parker](profiles/parker.md) | Dorothy Parker — sharpest tongue at the Algonquin Round Table |
+| [vidal](profiles/vidal.md) | Gore Vidal — patrician acid-wit of the televised feud |
+| [capote](profiles/capote.md) | Truman Capote — socialite gossip incarnate; "the dish, darling" |
+| [thompson](profiles/thompson.md) | Hunter S. Thompson — gonzo journalist living the story |
 
 Browse them all in [`profiles/`](profiles/).
 
